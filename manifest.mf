@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: com.fearlanguage.gfear
+OpenIDE-Module-Localizing-Bundle: com/fearlanguage/knowledgegraph/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

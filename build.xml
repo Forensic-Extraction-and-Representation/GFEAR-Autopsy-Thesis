@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="com.fearlanguage.gfear" default="netbeans" basedir=".">
+    <description>Builds, tests, and runs the project com.fearlanguage.gfear.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    <!--
+        Auto-increment the NBM build version on every build.
+
+        Runs before the harness assigns its default (timestamp) buildnumber.
+        <buildnumber> reads the integer in build.number, exposes it as the
+        ${build.number} property, and writes back the incremented value. Setting
+        ${buildnumber} here wins over the harness default because Ant properties
+        are immutable once set. The value is stamped into the NBM as
+        OpenIDE-Module-Build-Version (the "[... NNN]" shown in the Plugins UI).
+    -->
+    <target name="-pre-init">
+        <buildnumber file="build.number"/>
+        <property name="buildnumber" value="${build.number}"/>
+        <echo message="GFEAR-Autopsy NBM build version: ${buildnumber}"/>
+    </target>
+</project>
